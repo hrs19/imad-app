@@ -20,3 +20,10 @@ body {
     height: 200px;
 }
 
+container {
+    max-width :800px;
+    margin: 0 auto;
+    padding-top:20;
+    padding-right:40;
+    padding-left:40;
+}
