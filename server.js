@@ -35,7 +35,7 @@ var articleThree = {
           
           <p>Ryan Rodney Reynolds (born 23 October 1976) is a Canadian actor, film producer, and screenwriter. Some of his most prominent roles are Billy Simpson in the YTV Canadian teen soap opera Hillside (1991), Michael Bergen on the ABC sitcom Two Guys and a .</p>`,
           
-          img : 'https://en.wikipedia.org/wiki/Ryan_Reynolds#/media/File:Ryan_Reynolds_by_Gage_Skidmore.jpg'
+          img : 'http://www.pngmart.com/files/4/Ryan-Reynolds-Transparent-PNG.png'
 };
 
 function createTemp(data){
