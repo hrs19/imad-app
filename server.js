@@ -17,8 +17,8 @@ app.get('/counter',function (req,res){
 
 
 var articleOne = {
-    head:'Article One|HRS|IMAD',
-  title : 'Artilce One',
+    title:'Article One | HRS | IMAD',
+  head : 'Artilce One',
   date : '15th Oct,2017',
   content : `<p>This is the first article about 15th October which is not my birth date! </p>
           
