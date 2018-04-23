@@ -16,6 +16,20 @@ app.get('/counter',function (req,res){
     
 
 
+var content = {
+  title : 'Artilce One',
+  date : '15th Oct,2017',
+  content : `<p>This is the first article about 15th October which is not my birth date! </p>
+          
+          <p>This is the first article a great stair which stood in the middle of no where as a ruin!This is the first article a great stair which stood in the middle of no where as a ruin!This is the first article a great stair which stood in the middle of no where as a ruin!This is the first article a great stair which stood in the middle of no where as a ruin!</p>
+          <p>This had seen the wrath of time! </p>`
+};
+
+
+
+
+
+
 app.get('/article-one',function(req,res){//get request made to slash then this function is executed!
    res.sendFile(path.join(__dirname,'ui','article-one.html')); 
 });
