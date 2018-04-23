@@ -15,8 +15,8 @@ app.get('/counter',function (req,res){
 });
     
 
-
-var articleOne = {
+var articles = {
+ 'article-One' : {
     title:'Article One | HRS | IMAD',
   head : 'Artilce One',
   date : '15th Oct,2017',
@@ -25,9 +25,9 @@ var articleOne = {
           <p>This is the first article a great stair which stood in the middle of no where as a ruin!This is the first article a great stair which stood in the middle of no where as a ruin!This is the first article a great stair which stood in the middle of no where as a ruin!This is the first article a great stair which stood in the middle of no where as a ruin!</p>
           <p>This had seen the wrath of time! </p>`,
           img : 'https://img00.deviantart.net/5e2d/i/2012/317/6/0/png_steps_by_paradise234-d5kvomt.png'
-};
+},
 
-var articleTwo = {
+ 'article-Two' : {
      title:'Article Two | HRS | IMAD',
   head : 'Artilce Two',
   date : '19th Oct,2017',
@@ -38,9 +38,9 @@ var articleTwo = {
           img : ''
     
     
-};
+},
 
-var articleThree = {
+ 'article-Three' : {
     title:'Article Three | HRS | IMAD',
   head : 'Artilce Three',
   date : '23th Oct,2017',
@@ -49,8 +49,8 @@ var articleThree = {
          `,
           
           img : 'http://nptel.ac.in/noc/Candidate_photopath/Jul-Sep%202017/STSEP171060874_photo.jpg'
+},
 };
-
 function createTemp(data){
     var title=data.title;
     var date=data.date;
@@ -85,17 +85,12 @@ var template =`
 return template;
 }
 
-app.get('/article-one',function(req,res){//get request made to slash then this function is executed!
-   res.send(createTemp(articleOne)); 
+app.get('/articleName',function(req,res){
+   var articleName = req.params.aricleName;
+     res.send(createTemp(articles[articleName])); 
 });
 
-app.get('/article-three',function(req,res){//get request made to slash then this function is executed!
-  res.send(createTemp(articleThree)); 
-});
-app.get('/article-two',function(req,res){//get request made to slash then this function is executed!
-   //res.send('Article 2 Requested and served');
-   res.send(createTemp(articleTwo));
-});
+
 app.get('/ui/style.css', function (req, res) {//get request made to slash then this function is executed!
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
