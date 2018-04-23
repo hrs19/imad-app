@@ -27,6 +27,17 @@ var articleOne = {
           img : 'https://img00.deviantart.net/5e2d/i/2012/317/6/0/png_steps_by_paradise234-d5kvomt.png'
 };
 
+var articleThree = {
+    title:'Article One | HRS | IMAD',
+  head : 'Artilce One',
+  date : '15th Oct,2017',
+  content : `<p>This is the first article about 15th October which is not my birth date! </p>
+          
+          <p>This is the first article a great stair which stood in the middle of no where as a ruin!This is the first article a great stair which stood in the middle of no where as a ruin!This is the first article a great stair which stood in the middle of no where as a ruin!This is the first article a great stair which stood in the middle of no where as a ruin!</p>
+          <p>This had seen the wrath of time! </p>`,
+          img : 'https://img00.deviantart.net/5e2d/i/2012/317/6/0/png_steps_by_paradise234-d5kvomt.png'
+};
+
 function createTemp(data){
     var title=data.title;
     var date=data.date;
@@ -66,7 +77,7 @@ app.get('/article-one',function(req,res){//get request made to slash then this f
 });
 
 app.get('/article-three',function(req,res){//get request made to slash then this function is executed!
-   res.sendFile(path.join(__dirname,'ui','art3.html')); 
+  res.send(createTemp(articleThree)); 
 });
 app.get('/article-two',function(req,res){//get request made to slash then this function is executed!
    //res.send('Article 2 Requested and served');
