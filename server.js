@@ -10,7 +10,7 @@ app.get('/', function (req, res) { //get request made to slash then this functio
 });
 var counter=0;
 app.get('/counter',function (req,res){
-   counter=couner+1;
+   counter=counter+1;
    res.send(counter.toString());
 });
     
