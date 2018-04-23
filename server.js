@@ -103,10 +103,10 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-var counter =0;
+var c =0;
 app.get('/counter',function(req,res){
-   counter = counter + 1;
-   res.send(counter.toString());
+   c = c + 1;
+   res.send(c.toString());
     
 });
 // Do not change port, otherwise your app won't run on IMAD servers
