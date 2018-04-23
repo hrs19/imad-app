@@ -6,7 +6,7 @@ button.onclick = function(){
   //counter = counter + 1;
   
   //make http request
-  var request = XMLHttpRequest();
+  var request = new XMLHttpRequest();
   
   
   request.onreadystatechange =function(){
