@@ -27,15 +27,28 @@ var articleOne = {
           img : 'https://img00.deviantart.net/5e2d/i/2012/317/6/0/png_steps_by_paradise234-d5kvomt.png'
 };
 
+var articleTwo = {
+     title:'Article Two | HRS | IMAD',
+  head : 'Artilce Two',
+  date : '19th Oct,2017',
+  content : `<p>This is the first article about 19th October which is  my birth date! </p>
+          
+          <p>Hey guys! Its HRS And todays my birthday......No CONTENT HENCE WRITING MEANINGLESS SENTENCES. .</p>`,
+          
+          img : 'http://www.pngmart.com/files/4/Ryan-Reynolds-Transparent-PNG.png'
+    
+    
+};
+
 var articleThree = {
     title:'Article Three | HRS | IMAD',
   head : 'Artilce Three',
   date : '23th Oct,2017',
   content : `<p>This is the first article about 15th October which is not my birth date! </p>
           
-          <p>Ryan Rodney Reynolds (born 23 October 1976) is a Canadian actor, film producer, and screenwriter. Some of his most prominent roles are Billy Simpson in the YTV Canadian teen soap opera Hillside (1991), Michael Bergen on the ABC sitcom Two Guys and a .</p>`,
+         `,
           
-          img : 'http://www.pngmart.com/files/4/Ryan-Reynolds-Transparent-PNG.png'
+          img : 'http://nptel.ac.in/noc/Candidate_photopath/Jul-Sep%202017/STSEP171060874_photo.jpg'
 };
 
 function createTemp(data){
@@ -81,7 +94,7 @@ app.get('/article-three',function(req,res){//get request made to slash then this
 });
 app.get('/article-two',function(req,res){//get request made to slash then this function is executed!
    //res.send('Article 2 Requested and served');
-   res.sendFile(path.join(__dirname,'ui','art2.html')); 
+   res.send(createTemp(articleTwo));
 });
 app.get('/ui/style.css', function (req, res) {//get request made to slash then this function is executed!
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
