@@ -16,7 +16,7 @@ app.get('/counter',function (req,res){
     
 
 var articles = {
- 'article-One' : {
+ 'article-one' : {
     title:'Article One | HRS | IMAD',
   head : 'Artilce One',
   date : '15th Oct,2017',
@@ -27,7 +27,7 @@ var articles = {
           img : 'https://img00.deviantart.net/5e2d/i/2012/317/6/0/png_steps_by_paradise234-d5kvomt.png'
 },
 
- 'article-Two' : {
+ 'article-two' : {
      title:'Article Two | HRS | IMAD',
   head : 'Artilce Two',
   date : '19th Oct,2017',
@@ -40,7 +40,7 @@ var articles = {
     
 },
 
- 'article-Three' : {
+ 'article-three' : {
     title:'Article Three | HRS | IMAD',
   head : 'Artilce Three',
   date : '23th Oct,2017',
