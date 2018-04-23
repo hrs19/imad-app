@@ -33,14 +33,14 @@ button.onclick = function(){
 
 //Name
 var nameInput = document.getElementById('name');
-var name = nameInput.value;
+var names = nameInput.value;
 var submit = document.getElementById('submit_btn');
 
 var names = ['name_1','name_2','name_3'];
 var list = '';
     for(var i=0;i<names.length;i++)
     {   
-        list+="<li>"=names[i]="</li>";
+        list = "<li>"=names[i]="</li>";
         
     }
     var ul = document.getElementById('namelist');
