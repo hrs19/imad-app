@@ -104,9 +104,9 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 var c =0;
-app.get('/counter',function(req,res){
+app.get('/counter', function(req, res){
    c = c + 1;
-   res.send(hi);
+   res.send(c.toString());
    
     
 });
