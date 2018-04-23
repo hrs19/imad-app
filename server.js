@@ -28,13 +28,13 @@ var articleOne = {
 };
 
 var articleThree = {
-    title:'Article One | HRS | IMAD',
-  head : 'Artilce One',
-  date : '15th Oct,2017',
+    title:'Article Three | HRS | IMAD',
+  head : 'Artilce Three',
+  date : '23th Oct,2017',
   content : `<p>This is the first article about 15th October which is not my birth date! </p>
           
-          <p>This is the first article a great stair which stood in the middle of no where as a ruin!This is the first article a great stair which stood in the middle of no where as a ruin!This is the first article a great stair which stood in the middle of no where as a ruin!This is the first article a great stair which stood in the middle of no where as a ruin!</p>
-          <p>This had seen the wrath of time! </p>`,
+          <p>Ryan Rodney Reynolds (born 23 October 1976) is a Canadian actor, film producer, and screenwriter. Some of his most prominent roles are Billy Simpson in the YTV Canadian teen soap opera Hillside (1991), Michael Bergen on the ABC sitcom Two Guys and a .</p>`,
+          
           img : 'https://img00.deviantart.net/5e2d/i/2012/317/6/0/png_steps_by_paradise234-d5kvomt.png'
 };
 
