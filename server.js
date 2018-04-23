@@ -21,7 +21,7 @@ app.get('/article-one',function(req,res){//get request made to slash then this f
 });
 
 app.get('/article-three',function(req,res){//get request made to slash then this function is executed!
-   res.send('Article 3 Requested and served'); 
+   res.sendFile(path.join(__dirname,'ui','art3.html')); 
 });
 app.get('/article-two',function(req,res){//get request made to slash then this function is executed!
    //res.send('Article 2 Requested and served');
