@@ -35,7 +35,7 @@ var articles = {
           
           <p>Hey guys! Its HRS And todays my birthday......No CONTENT HENCE WRITING MEANINGLESS SENTENCES. .</p>`,
           
-          img : ''
+          img : 'http://nptel.ac.in/noc/Candidate_photopath/Jul-Sep%202017/STSEP171060874_photo.jpg'
     
     
 },
@@ -48,7 +48,7 @@ var articles = {
           
          `,
           
-          img : 'http://nptel.ac.in/noc/Candidate_photopath/Jul-Sep%202017/STSEP171060874_photo.jpg'
+          img : 'https://en.wikipedia.org/wiki/Ryan_Reynolds#/media/File:Ryan_Reynolds_by_Gage_Skidmore.jpg'
 },
 };
 function createTemp(data){
