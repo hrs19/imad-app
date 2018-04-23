@@ -1,5 +1,8 @@
 console.log('Loaded!');
-var image = document.getElementById('madi');
-image.onclick = function(){
-    image.style.marginLeft = '100px';
+var counter = 0;
+var button = document.getElementById('counter');
+button.onclick=function(){
+    counter = counter+1;
+    var span = getElementById('counter');
+    span.innerHtml = counter.toString();
 };
