@@ -62,7 +62,7 @@ return template;
 }
 
 app.get('/article-one',function(req,res){//get request made to slash then this function is executed!
-   res.sendFile(path.join(__dirname,'ui','article-one.html')); 
+   res.send(createTemp(articleOne)); 
 });
 
 app.get('/article-three',function(req,res){//get request made to slash then this function is executed!
