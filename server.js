@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-app.get('/', function (req, res) {
+app.get('/', function (req, res) { //get request made to slash then this function is executed!
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 var counter=0;
@@ -16,17 +16,17 @@ app.get('/counter',function (req,res){
     
 
 
-app.get('/article-one',function(req,res){
+app.get('/article-one',function(req,res){//get request made to slash then this function is executed!
    res.sendFile(path.join(__dirname,'ui','article-one.html')); 
 });
 
-app.get('/article-three',function(req,res){
+app.get('/article-three',function(req,res){//get request made to slash then this function is executed!
    res.send('Article 3 Requested and served'); 
 });
-app.get('/article-two',function(req,res){
+app.get('/article-two',function(req,res){//get request made to slash then this function is executed!
    res.send('Article 2 Requested and served'); 
 });
-app.get('/ui/style.css', function (req, res) {
+app.get('/ui/style.css', function (req, res) {//get request made to slash then this function is executed!
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
