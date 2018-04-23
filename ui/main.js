@@ -44,7 +44,7 @@ var list = '';
         
     }
     var ul = document.getElementById('namelist');
-    ul.innerHTML=list; 
+    ul.innerHTML = list; 
 };
 
     
