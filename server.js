@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 app.get('/', function (req, res) { //get request made to slash then this function is executed!
-  res.sendFile(path.join(__dirname, 'ui', 'project.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'players.html'));
 });
 var counter=0;
 app.get('/counter',function (req,res){
