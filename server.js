@@ -35,7 +35,7 @@ var articleTwo = {
           
           <p>Hey guys! Its HRS And todays my birthday......No CONTENT HENCE WRITING MEANINGLESS SENTENCES. .</p>`,
           
-          img : 'http://www.pngmart.com/files/4/Ryan-Reynolds-Transparent-PNG.png'
+          img : ''
     
     
 };
