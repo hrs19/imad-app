@@ -105,7 +105,7 @@ app.get('/ui/madi.png', function (req, res) {
 
 var count =0;
 app.get('/count',function(req,res){
-   count++;
+   count=count+1;
    res.send(count.toString());
     
 });
