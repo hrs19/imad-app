@@ -79,7 +79,7 @@ var template =`
     <body>
          <a href="http://harshits1910.imad.hasura-app.io"> HOME </a>
         <div class="container">
-            <img src="${img}" alt="Great Stairs" height="200" width="200" class="img-medium"/>
+            <img src="${img}" height="200" width="200" class="img-medium"/>
         </div>
         <br>
         <hr/>
