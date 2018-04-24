@@ -54,11 +54,12 @@ var articles = {
     title:'Article Three | HRS | IMAD',
   head : 'Artilce Three',
   date : '23th Oct,2017',
-  content : `<p>This is the first article about 15th October which is not my birth date! </p>
+  content : `<p>Ryan Rodney Reynolds was born on October 23, 1976, in Vancouver, British Columbia.His father, James Chester "Jim" Reynolds,was a food wholesaler, and his mother, Tammy, a retail salesperson</p>
+  <p>He's Deadpool !</p>
           
          `,
           
-          img : 'https://en.wikipedia.org/wiki/Ryan_Reynolds#/media/File:Ryan_Reynolds_by_Gage_Skidmore.jpg'
+          img : 'https://upload.wikimedia.org/wikipedia/commons/9/90/Ryan_reynolds.jpg'
 },
 };
 function createTemp(data){
