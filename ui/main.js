@@ -36,7 +36,7 @@ var list = '';
   };
  //make the req
   request.open('GET',"http://harshits1910.imad.hasura-app.io/submit-name?name="+name,true);
-  request.send(name);
+  request.send(null);
   
   
 };
