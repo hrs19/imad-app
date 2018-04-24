@@ -6,6 +6,15 @@ button.onclick = function(){
   //counter = counter + 1;
   
   //make http request
+};
+
+
+//Name
+var nameInput = document.getElementById('name');
+var name = nameInput.value;
+var submit = document.getElementById('submit_btn');
+submit.onclick=function(){
+
   var request = new XMLHttpRequest();
   
   
@@ -39,16 +48,6 @@ var list = '';
   request.send(null);
   
   
-};
-
-
-
-//Name
-var nameInput = document.getElementById('name');
-var names = nameInput.value;
-var submit = document.getElementById('submit_btn');
-submit.onclick=function(){
-
 };
 
     
