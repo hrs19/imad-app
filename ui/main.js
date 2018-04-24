@@ -18,7 +18,8 @@ button.onclick = function(){
         var span = document.getElementById('count');
         span.innerHTML = counter.toString();
         
-           var names = ['name1','name2','name3','name4'];
+           var names = request.responseText;
+           names  =JSON.parse(names);
 var list = '';
     for(var i=0;i<names.length;i++)
     {   
@@ -34,7 +35,7 @@ var list = '';
     
   };
  //make the req
-  request.open('GET',"http://harshits1910.imad.hasura-app.io/counter",true);
+  request.open('GET',"http://harshits1910.imad.hasura-app.io/submit-name?name="+name,true);
   request.send(null);
   
   
