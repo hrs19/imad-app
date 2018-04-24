@@ -16,8 +16,8 @@ app.get('/counter',function (req,res){
     
 
 var names =[];
-app.get('/submit-name/:name',function(req,res){
-    var name = req.params.name;
+app.get('/submit-name',function(req,res){
+    var name = req.querry.name;
     names.push(name);
     //json java script object notation
     res.send(JSON.stringify(names));
