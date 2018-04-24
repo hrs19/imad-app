@@ -24,7 +24,7 @@ button.onclick = function(){
     
   };
  //make the req
-  request.open('GET',"http://harshits1910.imad.hasura-app.io/submit-name?name="+name,true);
+  request.open('GET',"http://harshits1910.imad.hasura-app.io/counter",true);
   request.send(null);
   
   //make http request
