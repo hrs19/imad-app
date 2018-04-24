@@ -41,11 +41,11 @@ var articles = {
      title:'Article Two | HRS | IMAD',
   head : 'Artilce Two',
   date : '19th Oct,2017',
-  content : `<p>This is the first article about 19th October which is  my birth date! </p>
+  content : `<p>This article is about Robert Downey Jr. </p>
           
-          <p>Hey guys! Its HRS And todays my birthday......No CONTENT HENCE WRITING MEANINGLESS SENTENCES. .</p>`,
+          <p>Robert John Downey Jr. (born April 4, 1965)[2] is an American actor and singer. His career has included critical and popular success in his youth, followed by a period of substance abuse and legal troubles, and a resurgence of commercial success in middle age. For three consecutive years from 2012 to 2015, Downey topped the Forbes list of Hollywood's highest-paid actors, making an estimated $80 million in earnings between June 2014 and June 2015</p>`,
           
-          img : 'http://nptel.ac.in/noc/Candidate_photopath/Jul-Sep%202017/STSEP171060874_photo.jpg'
+          img : 'https://upload.wikimedia.org/wikipedia/commons/9/94/Robert_Downey_Jr_2014_Comic_Con_%28cropped%29.jpg'
     
     
 },
