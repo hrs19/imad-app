@@ -22,7 +22,7 @@ app.get('/test-db',function(req,res){
    //move a select req
    
    //return a response with result
-   pool.query('SELECT * FROM test',function(err,result){
+   pool.query('SELECT * FROM article',function(err,result){
       if(err){
           res.status(500).send(err,toString());
       }
