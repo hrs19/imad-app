@@ -11,7 +11,7 @@ app.use(morgan('combined'));
 var config = {
   user : 'harshits1910',
   database:'harshits1910',
-  host: 'db.imad.hasura-app.io',
+  host: 'http://db.imad.hasura-app.io/database.php?pgsql=localhost%3A5432&username=harshits1910&db=harshits1910&ns=public',
   port:'5432',
   password: process.env.DB_PASSWORD
   
