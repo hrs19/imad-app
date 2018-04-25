@@ -97,7 +97,7 @@ function createTemp(data){
     var date=data.date;
     var head=data.head;
     var content=data.content;
-    var img = data.img;
+    //var img = data.img;
 
 var template =`
 <!doctype html>
@@ -109,7 +109,7 @@ var template =`
     <body>
          <a href="http://harshits1910.imad.hasura-app.io"> HOME </a>
         <div class="container">
-            <img src="${img}" height="200" width="200" class="img-medium"/>
+            //<img src="${img}" height="200" width="200" class="img-medium"/>
         </div>
         <br>
         <hr/>
