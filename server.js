@@ -127,9 +127,9 @@ return template;
 }
 
 app.get('/articles/:articleName',function(req,res){
-   var articleName = req.params.articleName;
+  // var articleName = req.params.articleName;
    
-   var articleData = 
+   //var articleData = 
    
    pool.query("SELECT * FROM article WHERE title = "+req.params.articleName,function(err,result){
        if(err){
