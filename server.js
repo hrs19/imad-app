@@ -4,8 +4,12 @@ var path = require('path');
 var Pool = require('pg').Pool;
 var crypto  = require('crypto');
 var app = express();
-app.use(morgan('combined'));
+var bodyParser = require('body-parser');
 
+
+
+app.use(morgan('combined'));
+app.use(bodyParser.json());
 function hash(input,salt){
     //how to create hash? using default crypto lib!
     var hashed = crypto.pbkdf2Sync(input,salt,10000,512,'sha512');
@@ -21,7 +25,34 @@ app.get('/hash/:input',function(req,res){
    res.send(hashedString);
 });
 
+//function to create user
+app.post('/create-user',function(req,res){
+    var username= req.body.username;
+    var password= req.body.password;
+    
+    
+    var salt = crypto.RandomBytes(128).toString('hex');
+   var dbString = hash(password,salt);
+   pool.query('INSERT INTO "user" (username,password) VALUES ($1,42)',[username,dbString],function(err,result){
+       
+        if(err){
+           res.status(500).send(err.toString());
+       }
+       else{
+           if(result.rows.length===0){
+               res.status(404).send('Article Not Found');
+           }
+           else{
+               var articleData =result.rows[0];
+               res.send('User Successfully created : '+username);
+           }
+       }
+        
+   });
 
+   
+    
+});
 var config = {
   user : 'harshits1910',
   database:'harshits1910',
