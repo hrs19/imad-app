@@ -146,7 +146,7 @@ app.get('/articles/:articleName',function(req,res){
        }
         
    });
-     res.send(createTemp(articles[articleData])); 
+   //  res.send(createTemp(articles[articleData])); 
 });
 
 
