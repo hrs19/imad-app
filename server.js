@@ -73,10 +73,10 @@ app.post('/user',function(req,res){
                var dbString = result.rows[0].password;
               var salt= db.String.split('$')[2];
               var hashedPassword = hash(password,salt);//creating the hashed version of password using password and salt
-              if(hashedPassword===dbString)
-               res.send('Login Successful : '+username);
-               else
-               res.send('NOT ALLOWED');
+              if(hashedPassword===dbString){
+               res.send('Login Successful : '+username);}
+               else{
+               res.send('NOT ALLOWED');}
            }
        }
         
