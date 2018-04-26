@@ -80,11 +80,16 @@ app.post('/login',function(req,res){
               var salt= dbString.split('$')[2];
               var hashedPassword = hash(password,salt);//creating the hashed version of password using password and salt
               if(hashedPassword===dbString){
-               res.send('Login Successful : '+username);
                 //sETTING UP A SESSION  
+            
+            
+            
+            
+               res.send('Login Successful : '+username);
+            
                   
                   
-                  
+                 
               }
                else{
                res.send('HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH');}
@@ -141,7 +146,7 @@ app.get('/submit-name',function(req,res){
 });
 
 
-
+/*
 var articles = {
  'article-one' : {
     title:'Article One | HRS | IMAD',
@@ -178,7 +183,7 @@ var articles = {
           
           img : 'https://upload.wikimedia.org/wikipedia/commons/9/90/Ryan_reynolds.jpg'
 },
-};
+};*/
 function createTemp(data){
     var title=data.title;
     var date=data.date;
