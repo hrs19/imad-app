@@ -76,7 +76,7 @@ app.post('/login',function(req,res){
               if(hashedPassword===dbString){
                res.send('Login Successful : '+username);}
                else{
-               res.send('NOT ALLOWED');}
+               res.send('HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH');}
            }
        }
         
