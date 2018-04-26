@@ -49,10 +49,41 @@ app.post('/user',function(req,res){
        }
         
    });
-
-   
-    
 });
+
+
+app.post('/user',function(req,res){
+    var username= req.body.username;
+    var password= req.body.password;
+    
+    
+    var salt = crypto.randomBytes(128).toString('hex');
+   var dbString = hash(password,salt);
+   pool.query('SELECT * from "user" username = $1',[username],function(err,result){
+       
+        if(err){
+           res.status(500).send(err.toString());
+       }
+       else{
+           if(result.rows.length===0){
+               res.status(403).send('Invalid username or password');
+           }
+           else{
+               //var articleData =result.rows[0];
+               var dbString = result.rows[0].password;
+              var salt= db.String.split('$')[2];
+              var hashedPassword = hash(password,salt);//creating the hashed version of password using password and salt
+              if(hashedPassword===dbString)
+               res.send('Login Successful : '+username);
+               else
+               res.send('NOT ALLOWED');
+           }
+       }
+        
+   });
+});
+
+
 var config = {
   user : 'harshits1910',
   database:'harshits1910',
