@@ -119,8 +119,8 @@ submit.onclick=function(){
  var username = document.getElementById('username').value;
   var password = document.getElementById('password').value;
 //var name = nameInput.value;
-console.log('username');
-console.log('password');
+console.log(username);
+console.log(password);
   request.open('POST','http://harshits1910.imad.hasura-app.io/login',true);
   
   request.setRequestHeader('Content-Type','application/json');
