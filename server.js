@@ -81,7 +81,7 @@ app.post('/login',function(req,res){
               var hashedPassword = hash(password,salt);//creating the hashed version of password using password and salt
               if(hashedPassword===dbString){
                 //sETTING UP A SESSION  
-            
+            req.session.auth = {userId : result.rows[0].id};
             
             
             
