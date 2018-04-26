@@ -68,7 +68,7 @@ console.log(password);
 
 
 
-
+/*
 var counter  = 0;
 var button = document.getElementById('counter');
 button.onclick = function(){
@@ -143,7 +143,7 @@ var name = nameInput.value;
 
 
 
-
+*/
 
 
 
