@@ -71,7 +71,7 @@ app.post('/login',function(req,res){
            else{
                //var articleData =result.rows[0];
                var dbString = result.rows[0].password;
-              var salt= db.String.split('$')[2];
+              var salt= dbString.split('$')[2];
               var hashedPassword = hash(password,salt);//creating the hashed version of password using password and salt
               if(hashedPassword===dbString){
                res.send('Login Successful : '+username);}
