@@ -88,7 +88,7 @@ var name = nameInput.value;
 
 //Name username password to login
 
-var submit = document.getElementById('submit_button');
+var submit = document.getElementById('sub');
 submit.onclick=function(){
 
   var request = new XMLHttpRequest();
