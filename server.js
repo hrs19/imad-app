@@ -51,7 +51,7 @@ app.post('/user',function(req,res){
    });
 });
 
-/*
+
 app.post('/login',function(req,res){
     var username= req.body.username;
     var password= req.body.password;
@@ -83,7 +83,7 @@ app.post('/login',function(req,res){
    });
 });
 
-*/
+
 var config = {
   user : 'harshits1910',
   database:'harshits1910',
