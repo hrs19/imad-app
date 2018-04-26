@@ -123,7 +123,7 @@ var list = '';
  var username = document.getElementById('username').value;
   var password = document.getElementById('password').value;
 //var name = nameInput.value;
-  request.open('POST',"http://harshits1910.imad.hasura-app.io/login",true);
+  request.open('POST','http://harshits1910.imad.hasura-app.io/login',true);
   request.send(JSON.stringify({username: username,password: password}));
   
   
