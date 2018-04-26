@@ -98,11 +98,19 @@ submit.onclick=function(){
     
     if(request.readyState===XMLHttpRequest.DONE){
         if(request.status===200){
-        
-        console.log('user logged in')   ; 
+        console.log('user logged in'); 
+        alert('Login sucessful');
+            
+        }
+        else if(request.status===403){
+            alert('Invalid Credentials');
+        }
+        else if(request.satus===500){
+            alert('something went wrong');
+        }
  
         
-        }
+        
         
     }
     
