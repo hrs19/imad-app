@@ -4,6 +4,7 @@ var path = require('path');
 var Pool = require('pg').Pool;
 var crypto  = require('crypto');
 var app = express();
+
 var bodyParser = require('body-parser');
 var session = require('express-session');
 
@@ -18,6 +19,10 @@ function hash(input,salt){
     
     
 }
+app.use(session({
+    secret:'someRandomSecretValue',
+    cookie: {maxAge:1000*60*60*24*30}
+}));
 
 
 
