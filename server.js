@@ -83,7 +83,7 @@ app.post('/login',function(req,res){
    });
 });
 
-*?
+*/
 var config = {
   user : 'harshits1910',
   database:'harshits1910',
