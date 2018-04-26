@@ -99,7 +99,7 @@ submit.onclick=function(){
     if(request.readyState===XMLHttpRequest.DONE){
         if(request.status===200){
         
-        console.log('user logged in')    
+        console.log('user logged in')   ; 
  
         
         }
